@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<head>
+<style>
+.button {
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+}
+
+.button1 {background-color: Crimson; padding: 15px 43.5px; margin-top: 25px}
+.button2 {background-color: SeaGreen; padding: 15px 36px;}
+.button3 {background-color: RoyalBlue; padding: 15px 20px;}
+
+subtext {
+	border: none;
+	color: black;
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 200px;
+}
+
+h2 {
+	display: inline-block;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	text-align: center;
+	font-size: 55px;
+	white-space: nowrap;
+}
+
+</style>
+</head>
+
+<body>
+
+<center><h2>Welcome to the Homepage!</h2></center>
+<subtext><h4>What would you like to do?</h4><subtext>
+<div><button class="button button1" onclick="window.location.href='/assetManagement';">Find an Asset</button></div>
+<div><button class="button button2">Contact Tracing</button></div>
+<div><button class="button button3">Change Permissions</button></div>
+
+</body>
+{% endblock %}
